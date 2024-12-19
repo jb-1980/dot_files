@@ -32,15 +32,7 @@ alias orails=" vim ~/dot_files/include/rails_aliases.zsh"
 alias sbash="source ~/.bash_profile; clear"
 alias zbash="source ~/.zshrc; clear"
 alias bog="  bundle open"
-alias psd="open -a /Applications/Adobe\ Photoshop\ 2020/Adobe\ Photoshop\ 2020.app"
-alias opry=" vim ~/.pryrc"
 alias myvhost="vim /usr/local/etc/httpd/extra/httpd-vhosts.conf"
-alias oprompt="vim ~/dot_files/shadoath.zsh-theme"
-# Server quick edit
-alias vhost="sudo vim /etc/httpd/conf.d/http-vhosts.conf"
-alias ctags="`brew --prefix`/bin/ctags"
-alias bssp="brew services start postgresql"
-alias bsSp="brew services stop postgresql"
 
 # Colors/tabs
 alias noc="tab-reset"
@@ -84,21 +76,14 @@ alias ssrn="sudo systemctl restart nginx"
 alias sshr="sudo service httpd restart"
 alias ssar="sudo service apache2 restart"
 
-## Quick ssh commands
-alias ssfs="ssh skyfox@sfs"              # SkyFoxStudios
-
 ## Time
 alias retime="sudo ntpdate time.nist.gov"
-alias msttime="sudo rm /etc/localtime; sudo ln -s /usr/share/zoneinfo/America/Denver /etc/localtime"
-alias fixtime="sudo timedatectl set-timezone America/Denver"
 
-# Mac OS 10.12.6
-alias clear_dns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder;"
 
 ## Quick jumps
-alias cdd="   cd ~/dot_files"
-alias c="cd ~/code"
-alias pc="cd /personal-code"
+alias cdd="cd ~/dot_files"
+alias work="cd ~/projects/work"
+alias personal="cd ~/projects/personal"
 
 ## ls aliases
 alias ll="ls --color=auto -lh"

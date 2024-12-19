@@ -11,7 +11,7 @@ Start with Vundle https://github.com/VundleVim/Vundle.vim
 
 ```bash
 cd $HOME
-git clone https://github.com/shadoath/dot_files
+git clone git@github.com:jb-1980/dot_files.git
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
@@ -20,7 +20,7 @@ Set up vim folders:
 
 ### Install ZSH
 
-`sudo apt install zsh` **OR** `brew install zsh zsh-completions` **OR** `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+`sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 
 Make zsh the default shell:
 `chsh -s $(which zsh)`
@@ -47,30 +47,6 @@ ln -s ~/dot_files/.git-prompt.sh
 ln -s ~/dot_files/.git-completion.bash
 ln -s ~/dot_files/.pryrc
 ln -s ~/dot_files/.agignore
-```
-
-### Better search with Ag
-
-```bash
-brew install the_silver_searcher
-or
-sudo apt-get install -y automake pkg-config libpcre3-dev zlib1g-dev liblzma-dev
-sudo apt-get install silversearcher-ag
-or
-sudo yum install -y automake pkg-config libpcre3-dev zlib1g-dev liblzma-dev
-sudo yum install silversearcher-ag
-```
-
-or
-[manual](https://gist.github.com/rkaneko/988c3964a3177eb69b75)
-
-You will need `cmake` installed and possibly: `yum groupinstall "Development Tools"`.
-
-### Install fzf (fuzzy find)
-
-```bash
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install
 ```
 
 Install all vim plugins:

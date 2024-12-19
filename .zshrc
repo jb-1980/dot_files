@@ -47,12 +47,10 @@ plugins=(
 # git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 # git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 #
-export PATH="/opt/homebrew/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/dot_files/include/functions.zsh
 source $HOME/dot_files/include/base_aliases.zsh
-source $HOME/dot_files/include/rails_aliases.zsh
 source $HOME/dot_files/include/git_aliases.zsh
 
 # User configuration
@@ -63,11 +61,7 @@ source $HOME/dot_files/include/git_aliases.zsh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+export EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -132,3 +126,11 @@ export PATH=/Users/skylar/.meteor:$PATH
 export PATH=/Users/skylar/.rover/bin:$PATH
 export GPG_TTY=$(tty)
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Load pyenv automatically
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# Load pyenv-virtualenv automatically
+eval "$(pyenv virtualenv-init -)"
